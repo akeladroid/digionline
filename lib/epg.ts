@@ -121,7 +121,7 @@ class Epg {
 
         // időzóna korrekció
         const offset = Common.getStaticTimeZoneOffset();
-        correctDate.setHours(correctDate.getHours() - offset);
+        correctDate.setHours(correctDate.getHours() - 1);
 
         return correctDate;
     }
